@@ -9,3 +9,4 @@ end
 def artist= (artist_obj)
   @artist = artist_obj
 end
+end
