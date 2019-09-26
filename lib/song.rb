@@ -12,7 +12,7 @@ attr_reader :artist
 
 def initialize (name)
   @name = name
-  @@all < self
+  @@all << self
 end
 
 def artist= (artist_obj)
