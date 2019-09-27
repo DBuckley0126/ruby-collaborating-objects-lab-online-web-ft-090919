@@ -8,7 +8,11 @@ end
 
 def self.find_or_create_by_name (name)
     var = Artist.all.find {|artist| artist.name = name}
-    Artist.new (name) if !var
+    if var
+      var
+    else
+      Artist.new (name)
+    end
 end
 
 
