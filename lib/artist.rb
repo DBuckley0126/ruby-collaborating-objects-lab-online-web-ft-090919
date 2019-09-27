@@ -28,7 +28,7 @@ def songs
 end
 
 def print_songs
-  puts self.songs.names
+  puts self.songs.name
 end
 
 
