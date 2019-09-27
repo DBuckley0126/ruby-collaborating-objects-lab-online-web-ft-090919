@@ -7,7 +7,8 @@ def self.all
 end
 
 def self.find_or_create_by_name (name)
-    Artist.all.find {|artist| artist.name = name} else Artist.new (name)
+    var = Artist.all.find {|artist| artist.name = name}
+    Artist.new (name) if !var
 end
 
 
