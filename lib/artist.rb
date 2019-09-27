@@ -27,5 +27,9 @@ def songs
   Song.all.select { |song| song.artist == self}
 end
 
+def print_songs
+  puts songs
+end
+
 
 end
