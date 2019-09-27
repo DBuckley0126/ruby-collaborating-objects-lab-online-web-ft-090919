@@ -10,7 +10,7 @@ end
 def self.new_by_filename (file)
   artist, name = file.split(" - ")
   var = self.new(name)
-  #binding.pry
+  binding.pry
   var.artist = Artist.find_or_create_by_name(artist)
 end
 
