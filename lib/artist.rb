@@ -28,7 +28,7 @@ def songs
 end
 
 def print_songs
-  puts self.songs.name
+  self.songs.each {|song| puts song.name}
 end
 
 
