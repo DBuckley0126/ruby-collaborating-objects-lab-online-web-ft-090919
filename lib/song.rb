@@ -28,7 +28,7 @@ def artist= (artist_obj)
   @artist = artist_obj
 end
 
-def artist_name (name)
+def artist_name=(name)
   self.artist = Artist.find_or_create_by_name (name)
 end
 
